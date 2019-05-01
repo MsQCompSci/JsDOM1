@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3.0.0 JS DOM Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Import Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="style.css" rel="stylesheet" type= "text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    
+    <body>
+        <div class ="container">
+        <!--This h1 has text added to it from the js file-->
+        <h1 id = "title" style ="text-align: center">Layla's JS</h1>
+        
+        <!-- This creates a button on our page that calls the Display Date function  -->
+        <button type = "button" onclick ="displayDate()">Click to Show Date</button>
+        <!--This p element has the id = today which corresponds to the date object I created in javascript-->
+        <p id ="today"></p>
+        <h3>Instructions:</h3>
+        <p>1. If the number of clicks you have are odd, you can only click odd numbered lightbulbs to advance. Same goes for even clicks and even lightbulbs</p>
+        <p>2. If you click an odd light bulb on an even click the game will reset</p>
+        <p>3. Default colors are Orange. After 1 successful click the lightbulb turns purple. After 2 successful clicks the lightbulb turns pink.</p>
+        <p style="text-align:center">The objective of the game is to get all lightbulbs to turn pink without resetting.</p>
+        
+        <!--Lightbulb 1 -->
+        <div class="row">
+            <!-- CAUTION!Lightbulb is spelled wrong in the PNG name -->
+            <img id ="bulb1" class="responsive-img circle" style="width:10%" src="orangeLightblub.PNG">
+            
+          </div>
+          
+          
+            <!--Lightbulb 2 -->
+        <div class="row">
+            <!-- CAUTION!Lightbulb is spelled wrong in the PNG name -->
+            <img id ="bulb2" class="responsive-img circle" style="width:10%" src="orangeLightblub.PNG">
+            
+          </div>
+          
+            <!--Lightbulb 3 -->
+        <div class="row">
+            <!-- CAUTION!Lightbulb is spelled wrong in the PNG name -->
+            <img id ="bulb3" class="responsive-img circle" style="width:10%" src="orangeLightblub.PNG">
+        
+          </div>
+          
+            <!--Lightbulb 4 -->
+        <div class="row">
+            <!-- CAUTION!Lightbulb is spelled wrong in the PNG name -->
+            <img id ="bulb4" class="responsive-img circle" style="width:10%" src="orangeLightblub.PNG">
+          </div>
+      
+        </div ><!--Page container div-->
+        <script type ="text/javascript" src ="script.js"></script>
+    </body>
+</html>
