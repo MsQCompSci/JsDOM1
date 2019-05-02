@@ -15,6 +15,20 @@ function displayDate(){
     document.getElementById("today").innerHTML = Date();
 }
 
+function restart(){
+    bulbOne.src = "orangeLightblub.PNG";
+            bulbTwo.src = "orangeLightblub.PNG";
+            bulbThree.src = "orangeLightblub.PNG";
+            bulbFour.src = "orangeLightblub.PNG";
+            state1 = 'o';
+            state2 = 'o';
+            state3 = 'o';
+            state4 = 'o';
+            turn = 1;
+            console.log("Restart");
+}
+    
+
 //Variable for each lightbulb
 var bulbOne = document.querySelector("#bulb1");
 var bulbTwo = document.querySelector("#bulb2");
@@ -69,6 +83,7 @@ bulbOne.addEventListener(
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
             document.getElementById("words").innerHTML = "YOU WON!";
+            document.getElementById("words").style.fontSize = "500%";
             }
         }
             
@@ -107,6 +122,7 @@ bulbTwo.addEventListener(
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
             document.getElementById("words").innerHTML = "YOU WON!";
+            document.getElementById("words").style.fontSize = "500%";
             }
         }
             
@@ -144,7 +160,8 @@ bulbThree.addEventListener(
             state3 = 'p';
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
-            document.getElementById("words").innerHTML = "YOU WON!"
+            document.getElementById("words").innerHTML = "YOU WON!";
+            document.getElementById("words").style.fontSize = "500%";
             }
         }
             
@@ -183,6 +200,7 @@ bulbFour.addEventListener(
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
             document.getElementById("words").innerHTML = "YOU WON!";
+            document.getElementById("words").style.fontSize = "500%";
             }
         }
             
