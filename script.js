@@ -2,6 +2,7 @@ console.log("It WORKS!"); //This tests if the script is working and linked to we
 
 //This saves the h1 element in the "title" variable
 const title = document.querySelector("#title");
+const words = document.querySelector("#words")
 
 //This displays what is saves in my "title" variable in the console
 console.log(title);
@@ -67,6 +68,7 @@ bulbOne.addEventListener(
             state1 = 'p';
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
+            document.getElementById("words").innerHTML = "YOU WON!";
             }
         }
             
@@ -104,6 +106,7 @@ bulbTwo.addEventListener(
             state2 = 'p';
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
+            document.getElementById("words").innerHTML = "YOU WON!";
             }
         }
             
@@ -141,6 +144,7 @@ bulbThree.addEventListener(
             state3 = 'p';
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
+            document.getElementById("words").innerHTML = "YOU WON!"
             }
         }
             
@@ -178,6 +182,7 @@ bulbFour.addEventListener(
             state4 = 'p';
             if(state1 =='p' && state2 =='p'&& state3 =='p' && state4 =='p' ){
             document.getElementById("title").innerHTML = "YOU WON!";
+            document.getElementById("words").innerHTML = "YOU WON!";
             }
         }
             
